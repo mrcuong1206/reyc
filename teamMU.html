@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United</title>
+    <link rel="icon" href="./img/teammu/manu.png">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            /*margin: 0 20%;*/
+            background-color: #faf2e4;
+        }
+        
+        h2 {
+            font-family: cursive;
+        }
+        
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid #97212D;
+            font-family: cursive;
+            margin-top: 70px;
+        }
+        
+        p {
+            font-family: sans-serif;
+        }
+        
+        .gk {
+            text-align: center;
+            margin-left: 40px;
+        }
+        
+        .hauve {
+            text-align: center;
+        }
+        
+        .hauve img {
+            padding-left: 35px;
+        }
+        
+        .tienve {
+            text-align: center;
+        }
+        
+        .tienve img {
+            padding-left: 80px;
+        }
+        
+        .tiendao {
+            text-align: center;
+        }
+        
+        .tiendao img {
+            padding-left: 80px;
+        }
+        
+        .content img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .legend img {
+            padding-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .legend {
+            margin-left: 20px;
+        }
+        
+        .phan1,
+        .phan2,
+        .phan3,
+        .phan4,
+        #dh {
+            margin: 0 20%;
+            margin-top: 50px;
+        }
+        /* Begin MENU */
+        
+        #header {
+            background-color: #97212D;
+            height: 53px;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        
+        #header .menu li {
+            display: inline-block;
+            /*margin-left: 10px;*/
+        }
+        
+        .menu li a {
+            line-height: 53px;
+            color: #ccc;
+            padding: 0px 24px;
+            display: block;
+            position: relative;
+            font-family: sans-serif;
+            font-size: 17px;
+        }
+        
+        .menu li a::after {
+            content: "";
+            height: 3px;
+            width: 0px;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .menu li a:hover::after {
+            width: 40%;
+            transform: translateX(100%);
+        }
+        
+        .menu li:hover a {
+            /*background-color: #ccc;*/
+            color: white;
+        }
+        
+        .menu a {
+            text-decoration: none;
+        }
+        /* END MENU	 */
+        
+        #footer {
+            background-color: tomato;
+            height: 110px;
+        }
+        
+        #footer .name {
+            text-align: center;
+            line-height: 30px;
+        }
+        
+        #footer {}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <ul class="menu">
+            <li><a href="#top">My United</a></li>
+            <li><a href="#gt">Giới thiệu</a></li>
+            <li><a href="#dh">Đội hình</a></li>
+            <li><a href="#hlv">Huấn Luyện Viên</a></li>
+            <li><a href="#danhhieu">Danh hiệu</a></li>
+            <li><a href="#huyenthoai">Huyền Thoại</a></li>
+        </ul>
+    </div>
+    <h1 id="dt"><img src="./img/teammu/manu.png" width="230" height="235"><br>Manchester United</h1>
+    <div class="phan1">
+        <h2 id="gt">Introduce</h2>
+        <p>Câu lạc bộ bóng đá Manchester United (tiếng Anh: Manchester United Football Club, hay ngắn gọn là MU hay Man Utd) là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Old Trafford, Đại Manchester, Anh. Câu lạc bộ đang chơi tại Giải bóng đá Ngoại
+            hạng Anh, giải đấu hàng đầu trong hệ thống bóng đá Anh. Manchester United là một trong những câu lạc bộ thành công nhất tại Anh, giữ kỷ lục 20 lần vô địch bóng đá Anh, đoạt 12 Cúp FA, 5 Cúp Liên đoàn và giữ kỷ lục 21 lần đoạt Siêu cúp Anh.
+            <a href="https://vi.wikipedia.org/wiki/Manchester_United_F.C." target="_blank">Learn more</a>
+        </p>
+    </div>
+    <h2 id="dh">First Team</h2>
+
+    <!-- <div class="option">
+          <select name="language" id="">
+            <option value="lang">Language</option>
+            <option value="lang">Vietnames</option>
+            <option value="lang">English</option>
+          </select>
+          <div class="sign">
+            <a href="#" class="sign-items">login</a>
+            <a href="#" class="sign-items">sign up</a>
+          </div>
+    </div> -->
+
+    <div class="content">
+        <div class="gk">
+            <img src="./img/teammu/dean.jpg" alt="" width="193" height="197">
+        </div>
+        <div class="hauve">
+            <img src="./img/teammu/bissaka.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/lindelof.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/harry.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/shaw.jpg" alt="" width="183" height="190">
+        </div>
+        <div class="tienve">
+            <img src="./img/teammu/mc.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/bruno.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/pogba.jpg" alt="" width="183" height="190">
+        </div>
+
+        <div class="tiendao">
+            <img src="./img/teammu/me.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/rooney.jpg" alt="" width="183" height="190">
+            <img src="./img/teammu/ronaldo.jpg" alt="" width="183" height="190">
+        </div>
+    </div>
+    <div class="phan2">
+        <h2 id="hlv"> Manager</h2>
+        <p><img src="./img/teammu/ole.jfif" alt="" width="190" height="190" style="border-radius:50%; "> <b>Ole Gunnar Solskjær</b> (sinh ngày 26 tháng 2 năm 1973 tại Kristiansund, Møre og Romsdal) là một huấn luyện viên bóng đá người Na Uy và là cựu cầu
+            thủ bóng đá đã dành phần lớn sự nghiệp của mình cho CLB Manchester United. Hiện tại, ông là huấn luyện viên của Manchester United. Solskjær đã ra sân 366 lần trong màu áo Manchester United và ghi được 126 bàn thắng. Solskjær đã xuất hiện từ
+            băng ghế dự bị trong trận chung kết UEFA Champions League 1999, khi ông ghi được một bàn thắng vào phút bù giờ cuối cùng với CLB Bayern Munich, hoàn tất một cuộc lội ngược dòng tuyệt vời và giúp United giành cú ăn ba lịch sử. Khi còn thi đấu
+            tại Manchester United, Ole được mệnh danh là một "Siêu dự bị" bởi ông đã ghi nhiều bàn thắng quan trọng khi vào sân từ băng ghế dự bị. <a href="https://en.wikipedia.org/wiki/Ole_Gunnar_Solskj%C3%A6r" target="_blank">Learn more</a></p>
+    </div>
+    <div class="phan3">
+        <h2 id="danhhieu"> Danh hiệu </h2>
+        <div>
+            <ul>
+                <li>20 EPL</li>
+                <li>12 FA Cup</li>
+                <li>5 League Cups</li>
+                <li>21 FA Community Shields</li>
+                <li>3 European Cups/UEFA Champions Leagues</li>
+                <li>1 UEFA Europa League</li>
+                <li>1 UEFA Cup Winners' Cup</li>
+                <li>1 UEFA Super Cup</li>
+                <li>1 Intercontinental Cup</li>
+                <li>1 FIFA Club World Cup</li>
+            </ul>
+        </div>
+    </div>
+    <div class="phan4">
+        <h2 id="huyenthoai">LEGEND</h2>
+        <div class="legend">
+            <img src="./img/teammu/sir.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/catona.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/giggs.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/cm.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/rooney.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/beckham.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/emsir.jpg" alt="" width="170" height="170">
+            <img src="./img/teammu/me.jpg" alt="" width="170" height="170">
+        </div>
+    </div>
+    <!-- <div id="footer">
+        <i class="icon-fb ti-facebook"></i>
+        <div class="name">I'm is Mr Cường <br> Welcome to Manchester United</div>
+
+    </div> -->
+
+</body>
+
+</html>
