@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+ :root {
+    --orange: #f65900;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background-color: var(--orange);
+    color: black;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+
+/* Thẻ a .btn  */
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .1rem solid var(--orange);
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 0 2rem;
+}
+
+.name-color {
+    color: var(--orange);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--orange);
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: white;
+}
+
+
+/* Header start  */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #666666;
+    font-weight: bold;
+}
+
+.header .logo i {
+    color: var(--orange);
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+.header .navbar {
+    font-size: 1.8rem;
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    color: #666666;
+}
+
+.header .navbar a:hover {
+    color: var(--orange);
+}
+
+#menu-bar {
+    display: none;
+}
+
+#menu-bar i {
+    padding: .3rem;
+    border: .2rem solid #666666;
+    font-size: 3.5rem;
+    border-radius: .3rem;
+}
+
+
+/* Header end */
+
+
+/* Container start  */
+
+.container {
+    padding: 2rem 9%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    background: url(../img/home-bg.jpg) center / cover;
+    align-items: center;
+}
+
+.container .content {
+    flex: 1 1 40rem;
+    padding-top: 8rem;
+}
+
+.container .content h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container .content p {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: #666666;
+    text-transform: none;
+}
+
+.container .content .hihi {
+    text-align: center;
+}
+
+.container .image {
+    flex: 1 1 40rem;
+    padding-top: 5rem;
+}
+
+.container .image img {
+    width: 100%;
+    height: 52rem;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+    margin-left: -1.5rem;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateX(0rem);
+    }
+    50% {
+        transform: translateX(3rem);
+    }
+}
+
+
+/* Container end  */
+
+
+/* Seafood Salad   start */
+
+.seafood-salad {
+    padding: 0 9%;
+}
+
+.seafood-salad .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+
+.seafood-salad .box-container .box {
+    flex: 1 1 30rem;
+    overflow: hidden;
+    border: .1rem solid rgb(148, 148, 148);
+    box-shadow: 0rem 0.5rem 1.5rem rgb(0 0 0 / 20%);
+    border-radius: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.seafood-salad .box-container .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.seafood-salad .box-container .box .box-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.seafood-salad .box-container .box .box-content img {
+    margin: 1.5rem 0;
+    width: 6rem;
+    height: 6rem;
+}
+
+.seafood-salad .box-container .box .box-content h3 {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+.seafood-salad .box-container .box .box-content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.seafood-salad .box-container .box:hover .image {
+    top: 0;
+}
+
+.seafood-salad .box-container .box:hover .box-content {
+    transform: translateY(100%);
+}
+
+
+/* Seafood Salad  end  */
+
+
+/* Appetizer start  */
+
+.appetizer {
+    padding: 2rem 9%;
+}
+
+.appetizer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.appetizer .box-container .box {
+    background-color: #fff;
+    border: .1rem solid rgb(148, 148, 148);
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.appetizer .box-container .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.appetizer .box-container .box:hover img {
+    transform: scale(0.9);
+    border-radius: 50%;
+}
+
+.appetizer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0 0;
+}
+
+.appetizer .box-container .box .stars i {
+    color: var(--orange);
+    font-size: 1.7rem;
+    padding: 0.5rem .1rem;
+}
+
+
+/* Appetizer end  */
+
+
+/* Intro  start  */
+
+.intro {
+    padding: 3rem 9% 1rem;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro-content {
+    /* color: black; */
+    background-image: linear-gradient(to right bottom, var(--orange), black);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.image-icon {
+    border-radius: 40%;
+    display: block;
+    height: 10rem;
+    width: 11rem;
+    margin: 0 auto .5rem;
+}
+
+
+/* Intro  end  */
+
+
+/* Beer and Wine start  */
+
+.tieucuong-drinks {
+    padding: 1rem 9%;
+}
+
+.tieucuong-drinks .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tieucuong-drinks .box-container .box {
+    flex: 1 1 40rem;
+    padding: 1rem;
+    border: .1rem solid #666666;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.tieucuong-drinks .box-container .box img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+.tieucuong-drinks .box-container .box h3 {
+    padding: 1rem 0 0;
+    font-size: 2.2rem;
+    text-align: center;
+    /* color: #666666; */
+    background-image: linear-gradient(to right, rgb(255, 98, 0), rgb(22, 120, 22));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.tieucuong-drinks .box-container .box .price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding: .5rem 2rem;
+}
+
+.price-left {
+    color: #666666
+}
+
+.price-right {
+    color: black;
+}
+
+.tieucuong-drinks .box-container .box .stars {
+    font-size: 1.7rem;
+    color: var(--orange);
+    text-align: center;
+    font-weight: bold;
+}
+
+.tieucuong-drinks .box-container .box .center-btn {
+    text-align: center;
+    padding: 0 0 1.5rem;
+}
+
+
+/* .tieucuong-drinks .box-container .box img:hover {
+    transform: scale(0.7);
+    transition: all .3s ease-out;
+    border-radius: 2rem;
+} */
+
+
+/* Beer and Wine end  */
+
+
+/* After eating start  */
+
+.dessert {
+    padding: 2rem 9%;
+}
+
+.dessert .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.dessert .box-container .box {
+    flex: 1 1 40rem;
+    border: .1rem solid #666666;
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 20%);
+    /* padding: 1rem; */
+    border-radius: .3rem;
+}
+
+.dessert .box-container .box img {
+    height: 25rem;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.dessert .box-container .box h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+
+
+/* After eating end  */
+
+
+/* Sale start  */
+
+.sale {
+    padding: 2rem 9%;
+}
+
+.sale .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.sale .box-container .box {
+    height: 25rem;
+    flex: 1 1 30rem;
+    border: .1rem solid #666666;
+    border-radius: .3rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    overflow: hidden;
+    position: relative;
+}
+
+.sale .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sale .box-container .box .box-content {
+    background-color: rgba(255, 255, 255, 0.789);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.sale .box-container .box .box-content h3 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.sale .box-container .box .box-content p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: black;
+}
+
+.sale .box-container .box:hover .box-content {
+    top: 0;
+}
+
+
+/* Sale end  */
+
+
+/* Customer Review start  */
+
+.review {
+    padding: 2rem 9%;
+}
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    flex: 1 1 40rem;
+    border: .7rem solid var(--orange);
+    text-align: center;
+    background-color: #333;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    border-radius: .3rem;
+    margin-top: 6rem;
+}
+
+.review .box-container .box img {
+    width: 12rem;
+    height: 12rem;
+    border: .5rem solid var(--orange);
+    border-radius: 50%;
+    margin-top: -6.5rem;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    font-size: 2.2rem;
+    color: white;
+    /* padding: 0.5rem; */
+}
+
+.review .box-container .box .stars i {
+    color: var(--orange);
+    font-size: 1.7rem;
+}
+
+.review .box-container .box p {
+    padding: .5rem 1rem 1.5rem;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+
+/* Customer Review end  */
+
+
+/* Footer start  */
+
+.footer {
+    padding: 2rem 0 0;
+}
+
+.footer .box-container {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.footer .box-container .info {
+    padding: 2rem 0;
+    /* text-align: center; */
+}
+
+.footer .box-container .info p {
+    font-size: 1.5rem;
+    text-transform: none;
+    padding: .3rem 0;
+    color: white;
+}
+
+.footer .box-container .mxh .list-mxh {
+    list-style: none;
+    display: flex;
+}
+
+.footer .box-container .mxh {
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .mxh i {
+    padding-right: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.footer .box-container .mxh i:hover {
+    color: var(--orange);
+}
+
+
+/* Footer end */
+
+
+/* Scroll-top start */
+
+#scroll-top {
+    position: fixed;
+    /* top: calc(100% - 12rem); */
+    right: 2rem;
+    padding: 1rem 1.2rem;
+    font-size: 3rem;
+    background: var(--orange);
+    color: #fff;
+    border-radius: 50%;
+    /* transition: 1s linear; */
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+}
+
+#scroll-top.active {
+    top: calc(100% - 10rem);
+}
+
+
+/* Scroll-top end  */
+
+
+/* Loader start  */
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #f7fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader-container img {
+    height: 25rem;
+    width: 25rem;
+}
+
+.loader-container.fade-out {
+    top: -120%;
+}
+
+
+/* Loader end  */
+
+
+/* Responsive start  */
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    .container {
+        padding: 2rem;
+    }
+    .seafood-salad {
+        padding: 1rem;
+    }
+    .appetizer {
+        padding: 1rem;
+    }
+    .intro {
+        max-width: 100%;
+    }
+    .tieucuong-drinks {
+        padding: 1rem;
+    }
+    .dessert {
+        padding: 1rem;
+    }
+    .sale {
+        padding: 1rem;
+    }
+    .review {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /* Làm ẩn phần navbar  */
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        /* Hiện phần Navbar  */
+    }
+    .header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--orange);
+        background: #fff;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+        scroll-behavior: smooth;
+    }
+    .container .image img {
+        height: 30rem;
+    }
+    .review .box-container .box p {
+        padding: 0 1rem 1rem;
+    }
+    .footer .box-container .info {
+        padding-left: 1.5rem;
+    }
+    .footer .box-container .info .none {
+        display: none;
+    }
+    #scroll-top {
+        right: 1rem;
+    }
+}
+
+
+/* Responsive end  */
